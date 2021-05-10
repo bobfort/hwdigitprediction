@@ -34,7 +34,7 @@ model.add(Dense(128, activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(num_classes, activation='softmax'))
 
-model.compile(loss='categorical_crossentropy',
+model.compile(loss='binary_crossentropy',
       optimizer='adam',
       metrics=['accuracy'])
       
